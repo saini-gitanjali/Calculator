@@ -29,6 +29,7 @@ function reverseNumberFormat(num) {
     return Number(num.replace(/,/g,''));
     
 }
+
 var operator = document.getElementsByClassName("operator");
 for(let i=0; i<operator.length; i++) {
     operator[i].addEventListener('click', function() {
@@ -42,7 +43,6 @@ for(let i=0; i<operator.length; i++) {
             printOutput(output);
         }
         else {
-
             var output = getOutput();
             var history = getHistory();
             if(output == "" && history != "") {
@@ -64,8 +64,8 @@ for(let i=0; i<operator.length; i++) {
                     history = history+this.id;
                     printHistory(history);
                     printOutput("");
+                }
             }
-        }
         }
     })
 }
