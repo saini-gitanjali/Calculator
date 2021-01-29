@@ -1,0 +1,72 @@
+body{
+    font-family: 'open-sans';
+    background-color:rgb(0 7 10);
+}
+#container{
+    width: 1700px;
+    height: 1100px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(90 30 30 / 30%), rgba(0,0,0,0.3)), url(bg.jpg);
+    background-size: 100% 100%;
+    margin: 80px auto;
+    padding-top:100px;
+}
+#calculator{
+    width:  520px;
+    height: 900px;
+    background-color: rgb(93 91 8);
+    position:inherit;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+}
+#result{
+    height: 120px;
+}
+#history{
+    text-align: right;
+    height: 60px;
+    margin: 10px, 20px;
+    font-size: 40px;
+    padding-top: 20px;
+}
+#output{
+    text-align: right;
+    height: 15;
+    margin: 10px 10px;
+    font-size: 60px;
+    margin-bottom: 10px;
+    
+}
+#keyboard {
+    margin-left:30px;
+    margin-top: 80px;
+    height: 400px;
+    }
+.operator, .number, .empty{
+    
+    width:  85px;
+    height: 85px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 50px;
+}
+.number, .empty{
+    background-color: rgb(93 91 8);
+    background-color: rgb(93 91 8);  
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+.operator{
+    background-color: rgb(204 173 13);
+}
